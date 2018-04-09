@@ -1,0 +1,386 @@
+.page-btn {
+  height: 1.5em;
+  padding: .5em 0 0 .5em;
+  background: transparent;
+  color: white;
+  font-family: 'Share Tech', sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: .7em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: color .3s;
+}
+
+.page-btn:hover {
+  color: #40eddc;
+}
+
+.page-btn span {
+  display: inline-block;
+}
+
+.top-btn {
+  position: fixed;
+  top: 1%;
+  left: 45%;
+}
+
+.right-btn {
+  position: fixed;
+  top: 45%;
+  right: -2%;
+  transform: rotate(90deg);
+}
+
+.down-btn {
+  position: fixed;
+  bottom: 3%;
+  left: 45%;
+}
+
+.left-btn {
+  position: fixed;
+  left: -1%;
+  top: 45%;
+  transform: rotate(-90deg);
+}
+
+  /* ---- */
+ /* home */
+/* ---- */
+
+/* work */
+
+.home-h-work {
+  transition: .5s .1s;
+}
+
+.page-btn:hover .home-h-work {
+  transform: scale(2.2) translate(0, 1.2em) rotate(45deg);
+}
+
+.home-o-work {
+  transition: .5s .2s;
+}
+
+.page-btn:hover .home-o-work {
+  transform: scale(1.5) translate(0, 1.2em) rotate(45deg);
+}
+
+.home-m-work {
+  transition: .5s .3s;
+}
+
+.page-btn:hover .home-m-work {
+  transform: scale(1.5) translate(0, 1em) rotate(45deg);
+}
+
+.home-e-work {
+  transition: .5s .4s;
+}
+
+.page-btn:hover .home-e-work {
+  transform: scale(1.5) translate(0, .8em) rotate(45deg);
+}
+
+/* contact */
+
+.home-h-contact {
+  transition: .5s .1s;
+}
+
+.page-btn:hover .home-h-contact {
+  transform: scale(2.2) translate(0, .3em) rotate(-90deg);
+}
+
+.home-o-contact {
+  transition: .5s .2s;
+}
+
+.page-btn:hover .home-o-contact {
+  transform: scale(1.5) translate(0, -.7em) rotate(-90deg);
+}
+
+.home-m-contact {
+  transition: .5s .3s;
+}
+
+.page-btn:hover .home-m-contact {
+  transform: scale(1.5) translate(0, .5em) rotate(-90deg);
+}
+
+.home-e-contact {
+  transition: .5s .4s;
+}
+
+.page-btn:hover .home-e-contact {
+  transform: scale(1.5) translate(0, -.4em) rotate(-90deg);
+}
+
+/* resume */
+
+.home-h-resume {
+  transition: .5s .1s;
+}
+
+.page-btn:hover .home-h-resume {
+  transform: scale(2.2) translate(0, 1.2em) rotate(45deg);
+}
+
+.home-o-resume {
+  transition: .5s .2s;
+}
+
+.page-btn:hover .home-o-resume {
+  transform: scale(1.5) translate(0, 1.2em) rotate(45deg);
+}
+
+.home-m-resume {
+  transition: .5s .3s;
+}
+
+.page-btn:hover .home-m-resume {
+  transform: scale(1.5) translate(0, 1em) rotate(45deg);
+}
+
+.home-e-resume {
+  transition: .5s .4s;
+}
+
+.page-btn:hover .home-e-resume {
+  transform: scale(1.5) translate(0, .8em) rotate(45deg);
+}
+
+/* about */
+
+.home-h-about {
+  transition: .5s .1s;
+}
+
+.page-btn:hover .home-h-about {
+  transform: scale(2.2) translate(0, .5em) rotate(90deg);
+}
+
+.home-o-about {
+  transition: .5s .2s;
+}
+
+.page-btn:hover .home-o-about {
+  transform: scale(1.5) translate(-1em, 1.6em) rotate(90deg);
+}
+
+.home-m-about {
+  transition: .5s .3s;
+}
+
+.page-btn:hover .home-m-about {
+  transform: scale(1.5) translate(-1.9em, 2.5em) rotate(90deg);
+}
+
+.home-e-about {
+  transition: .5s .4s;
+}
+
+.page-btn:hover .home-e-about {
+  transform: scale(1.5) translate(-2.8em, 3.5em) rotate(90deg);
+}
+
+  /* ---- */
+ /* work */
+/* ---- */
+
+.work-link:hover {
+  animation: work 3s;
+}
+
+@keyframes work {
+  15% {
+    transform: scale(1.5);
+  }
+  25% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(5);
+    filter: blur(.5em);
+    opacity: .4;
+  }
+  51% {
+    opacity: 0;
+  }
+  52% {
+    transform: scale(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+  /* ------- */
+ /* contact */
+/* ------- */
+
+/* .contact-c {
+  transition: transform .5s;
+}
+
+.page-btn:hover .contact-c {
+  transform: rotate(-90deg);
+} */
+
+.contact-o {
+  transform-origin: center;
+  transition: transform .5s .1s;
+}
+
+.page-btn:hover .contact-o {
+  transform: scale(1.5) rotate(-90deg);
+}
+
+.contact-n {
+  transform-origin: center;
+  transition: transform .5s .2s;
+}
+
+.page-btn:hover .contact-n {
+  transform: scale(1.5) rotate(-90deg);
+}
+
+/* .contact-t {
+  transition: transform .5s .3s;
+}
+
+.page-btn:hover .contact-t {
+  transform: rotate(-90deg);
+} */
+
+.contact-a {
+  transform-origin: center;
+  transition: transform .5s .4s;
+}
+
+.page-btn:hover .contact-a {
+  transform: scale(1.5) rotate(-90deg);
+}
+
+.contact-c {
+  transform-origin: center;
+  transition: transform .5s .5s;
+}
+
+.page-btn:hover .contact-c {
+  transform: scale(1.5) rotate(-90deg);
+}
+
+.contact-t {
+  transform-origin: center;
+  transition: transform .5s .6s;
+}
+
+.page-btn:hover .contact-t {
+  transform: scale(1.5) rotate(-90deg);
+}
+
+.page-btn:hover #contact-cap-c {
+  transform: scale(2.2) rotate(-90deg);
+}
+
+  /* ------ */
+ /* resume */
+/* ------ */
+
+.resume-r {
+  transition: transform .5s 0.4s;
+}
+
+.page-btn:hover .resume-r {
+  transform: scale(2.2) translate(0, -.9em);
+}
+
+.resume-e1 {
+  transition: transform .5s .2s;
+}
+
+.page-btn:hover .resume-e1 {
+  transform: scale(1.5) translate(0, -1em);
+}
+
+.resume-s {
+  transition: transform .5s .0s;
+}
+
+.page-btn:hover .resume-s {
+  transform: scale(1.5) translate(0, -.8em);
+}
+
+.resume-u {
+  transition: transform .5s .1s;
+}
+
+.page-btn:hover .resume-u {
+  transform: scale(1.5) translate(0, -.8em);
+}
+
+.resume-m {
+  transition: transform .5s .3s;
+}
+
+.page-btn:hover .resume-m {
+  transform: scale(1.5) translate(0, -1em);
+}
+
+.resume-e2{
+  transition: transform .5s .5s;
+}
+
+.page-btn:hover .resume-e2 {
+  transform: scale(1.5) translate(0, -1.2em);
+}
+
+  /* ----- */
+ /* about */
+/* ----- */
+
+.about-a {
+  transition: transform .5s;
+}
+
+.page-btn:hover .about-a {
+  transform: scale(2.2) translate(2.8em, .1em) rotate(90deg);
+}
+
+.about-b {
+  transition: transform .5s .1s;
+}
+
+.page-btn:hover .about-b {
+  transform: scale(1.5) translate(2em, 0) rotate(90deg);
+}
+
+.about-o {
+  transition: transform .5s .2s;
+}
+
+.page-btn:hover .about-o {
+  transform: scale(1.5) translate(.3em, 0) rotate(90deg);
+}
+
+.about-u {
+  transition: transform .5s .3s;
+}
+
+.page-btn:hover .about-u {
+  transform: scale(1.5) translate(-1.3em, 0) rotate(90deg);
+}
+
+.about-t {
+  transition: transform .5s .4s;
+}
+
+.page-btn:hover .about-t {
+  transform: scale(1.5) translate(-3em, 0) rotate(90deg);
+}
