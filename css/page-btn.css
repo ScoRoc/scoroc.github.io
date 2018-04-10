@@ -101,7 +101,7 @@
 }
 
 .page-btn:hover .home-o-contact {
-  transform: scale(1.5) translate(0, -.7em) rotate(-90deg);
+  transform: scale(1.5) translate(0, -.8em) rotate(-90deg);
 }
 
 .home-m-contact {
@@ -109,7 +109,7 @@
 }
 
 .page-btn:hover .home-m-contact {
-  transform: scale(1.5) translate(0, .5em) rotate(-90deg);
+  transform: scale(1.5) translate(.3em, .2em) rotate(-90deg);
 }
 
 .home-e-contact {
@@ -117,7 +117,7 @@
 }
 
 .page-btn:hover .home-e-contact {
-  transform: scale(1.5) translate(0, -.4em) rotate(-90deg);
+  transform: scale(1.5) translate(.5em, -.4em) rotate(-90deg);
 }
 
 /* resume */
