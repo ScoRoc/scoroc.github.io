@@ -4,7 +4,7 @@
   background: transparent;
   color: white;
   font-family: 'Share Tech', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: bold;
   letter-spacing: .7em;
   border: none;
@@ -25,32 +25,35 @@
 .top-btn {
   position: fixed;
   top: 1%;
-  left: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .right-btn {
   position: fixed;
-  top: 45%;
-  right: -2%;
-  transform: rotate(90deg);
+  top: 50%;
+  right: 0%;
+  transform-origin: right;
+  transform: translate(-5%, 220%) rotate(90deg);
 }
 
 .down-btn {
   position: fixed;
-  bottom: 3%;
-  left: 45%;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .left-btn {
   position: fixed;
-  left: -1%;
-  top: 45%;
-  transform: rotate(-90deg);
+  left: 1%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
 }
 
-  /* ---- */
- /* home */
-/* ---- */
+  /* --------------- */
+ /* buttons to home */
+/* --------------- */
 
 /* work */
 
@@ -59,7 +62,7 @@
 }
 
 .page-btn:hover .home-h-work {
-  transform: scale(2.2) translate(0, 1.2em) rotate(45deg);
+  transform: scale(2.2) translate(0em, 1.4em) rotate(45deg);
 }
 
 .home-o-work {
@@ -75,7 +78,7 @@
 }
 
 .page-btn:hover .home-m-work {
-  transform: scale(1.5) translate(0, 1em) rotate(45deg);
+  transform: scale(1.5) translate(0, .8em) rotate(45deg);
 }
 
 .home-e-work {
@@ -83,7 +86,7 @@
 }
 
 .page-btn:hover .home-e-work {
-  transform: scale(1.5) translate(0, .8em) rotate(45deg);
+  transform: scale(1.5) translate(0, .4em) rotate(45deg);
 }
 
 /* contact */
@@ -93,7 +96,7 @@
 }
 
 .page-btn:hover .home-h-contact {
-  transform: scale(2.2) translate(0, .3em) rotate(-90deg);
+  transform: scale(2.2) translate(0, .5em) rotate(-90deg);
 }
 
 .home-o-contact {
@@ -101,7 +104,7 @@
 }
 
 .page-btn:hover .home-o-contact {
-  transform: scale(1.5) translate(0, -.8em) rotate(-90deg);
+  transform: scale(1.5) translate(0, -.4em) rotate(-90deg);
 }
 
 .home-m-contact {
@@ -109,7 +112,7 @@
 }
 
 .page-btn:hover .home-m-contact {
-  transform: scale(1.5) translate(.3em, .2em) rotate(-90deg);
+  transform: scale(1.5) translate(.3em, .5em) rotate(-90deg);
 }
 
 .home-e-contact {
@@ -117,7 +120,7 @@
 }
 
 .page-btn:hover .home-e-contact {
-  transform: scale(1.5) translate(.5em, -.4em) rotate(-90deg);
+  transform: scale(1.5) translate(.5em, -.1em) rotate(-90deg);
 }
 
 /* resume */
@@ -198,25 +201,29 @@
 
 @keyframes work {
   15% {
-    transform: scale(1.5);
+    transform: translate(-50%, -50%) scale(1.5);
   }
   25% {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
     filter: blur(0);
     opacity: 1;
   }
   50% {
-    transform: scale(5);
+    transform: translate(-50%, -50%) scale(5);
     filter: blur(.5em);
     opacity: .4;
   }
   51% {
+    transform: translate(-50%, -50%) scale(0);
     opacity: 0;
   }
   52% {
-    transform: scale(0);
+    transform: translate(-50%, -50%) scale(0);
     opacity: 1;
     filter: blur(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -350,7 +357,7 @@
 }
 
 .page-btn:hover .about-a {
-  transform: scale(2.2) translate(2.8em, .1em) rotate(90deg);
+  transform: scale(2.2) translate(2.8em, .3em) rotate(90deg);
 }
 
 .about-b {
@@ -358,7 +365,7 @@
 }
 
 .page-btn:hover .about-b {
-  transform: scale(1.5) translate(2em, 0) rotate(90deg);
+  transform: scale(1.5) translate(2em, .3em) rotate(90deg);
 }
 
 .about-o {
@@ -366,7 +373,7 @@
 }
 
 .page-btn:hover .about-o {
-  transform: scale(1.5) translate(.3em, 0) rotate(90deg);
+  transform: scale(1.5) translate(.3em, .3em) rotate(90deg);
 }
 
 .about-u {
@@ -374,7 +381,7 @@
 }
 
 .page-btn:hover .about-u {
-  transform: scale(1.5) translate(-1.3em, 0) rotate(90deg);
+  transform: scale(1.5) translate(-1.3em, .3em) rotate(90deg);
 }
 
 .about-t {
@@ -382,5 +389,5 @@
 }
 
 .page-btn:hover .about-t {
-  transform: scale(1.5) translate(-3em, 0) rotate(90deg);
+  transform: scale(1.5) translate(-3em, .3em) rotate(90deg);
 }

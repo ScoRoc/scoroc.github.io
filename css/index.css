@@ -148,7 +148,23 @@ input {
 }
 
 .submit {
-  color: black;
+  width: 10em;
+  padding: .4em 0;
+  background: #ecff55;
+  /* color: #3b0033; */
+  color: #d404b8;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  /* box-shadow: 0 0 0 0 #36ec43, 0 0 .5em .1em #36ec43 inset; */
+  box-shadow: 0 0 .4em .05em #36ec43, 0 0 0 0 #36ec43 inset;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.submit:hover {
+  /* box-shadow: 0 0 .4em .05em #36ec43, 0 0 0 0 #36ec43 inset; */
+  box-shadow: 0 0 0 0 #36ec43, 0 0 .5em .1em #36ec43 inset;
 }
 
 .contact-tilt-p-wrapper {
@@ -319,6 +335,15 @@ input {
   height: 90%;
   width: 90%;
   overflow: scroll;
+}
+
+.about-nested-a {
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+.about-nested-a:hover {
+  border-bottom: 1px solid #36ec43;
 }
 
 #work {
